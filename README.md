@@ -31,6 +31,7 @@ Q: How can i ID the build
 
 A: Check the commit number before AVX-512. (Or open the version file in the release you've downloaded)
 
+
 Q: Can i get the source
 
 A: The source is a direct copy of bleeding-egde-(Insert-commit)
