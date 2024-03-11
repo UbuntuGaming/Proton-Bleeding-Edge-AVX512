@@ -27,11 +27,16 @@ Updated biweekly.
 # Other info
 Packages are compressed using LZMA.
 
-Q: How can i ID the build
+Question 1: How can i ID the build?
 
-A: Check the commit number before AVX-512. (Or open the version file in the release you've downloaded)
+Answer 1: Check the commit number before AVX-512. (Or open the version file in the release you've downloaded)
 
 
-Q: Can i get the source
+Question 2: Can i get the source?
 
-A: The source is a direct copy of bleeding-egde-(Insert-commit)
+Answer 2: The source is a direct copy of bleeding-egde-(Insert-commit)
+
+
+Question 3: Does this include all instructions ranging from x86-64-v1 to x86-64-v4?
+
+Answer 3: This is a stripped down version. The same as if you was building with core-avx2 (According to GCC source code), But with AVX-512 support (If -mtune=core-avx512 was a feature this would be it)
