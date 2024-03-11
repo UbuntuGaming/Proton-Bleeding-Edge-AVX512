@@ -1,14 +1,14 @@
 # Proton-Bleeding-Edge-AVX512
 Proton Builds Built With AVX-512 &amp; Partial PGO+LTO.
 
-# Install
+# Install:
 
 Download a release from the Releases page.
 Create a ~/.steam/root/compatibilitytools.d directory if it does not exist.
 Extract the release into ~/.steam/root/compatibilitytools.d/
 
-# Issues
-Please do not submit issues to Valve without confirming it doesn't work with a regular build of proton directly from them
+# Issues:
+Please do not submit issues to Valve without confirming it doesn't work with a regular build of proton directly from them.
 
 # Titles that do not work:
 The Finals.
@@ -16,10 +16,10 @@ The Finals.
 Any title that requires kernel boot parameter: clearcpuid=304
 
 # Titles that work but have issues:
-Call Of Duty: Black Ops 3
+Call Of Duty: Black Ops 3 > Main menu does not crash Wine if you leave it a few seconds before doing anything once the game loads the menu.
 
-# Important Notice
-For now packages are only built with -O3. Some titles may not work E.G Black Ops 3 is known to crash on main menu if moving around the menus with the zoomies, This is something that happens on -O2 builds but seems to happen much more on -O3, But this could be placebo.
+# Important Notice:
+For now packages are only built with -O3. Some titles may not work or work with issues e.g Call Of Duty: Black Ops 3 is known to crash Wine on main menu if moving around the menu instantly after it loads with the zoomies.
 
 # How often will you release packages:
 Updated biweekly.
