@@ -6,6 +6,7 @@ Please do not submit issues to Valve without confirming it doesn't work with a r
 
 # Titles that do not work:
 The Finals.
+
 Any title that requires kernel Boot parameter: clearcpuid=304
 
 # Titles that work but have issues:
