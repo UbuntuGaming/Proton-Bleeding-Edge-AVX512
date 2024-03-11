@@ -21,6 +21,6 @@ Updated biweekly.
 # Other info
 Packages are compressed using LZMA.
 
-How can i ID the build: Check the commit number before AVX-512.
+How can i ID the build: Check the commit number before AVX-512. (Or open the version file in the release you've downloaded)
 
 Can i get the source: The source is a direct copy of bleeding-egde-(Insert-commit)
