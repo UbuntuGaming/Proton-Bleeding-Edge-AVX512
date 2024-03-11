@@ -1,6 +1,12 @@
 # Proton-Bleeding-Edge-AVX512
 Proton Builds Built With AVX-512 &amp; Partial PGO+LTO.
 
+# Install
+
+Download a release from the Releases page.
+Create a ~/.steam/root/compatibilitytools.d directory if it does not exist.
+Extract the release into ~/.steam/root/compatibilitytools.d/
+
 # Issues
 Please do not submit issues to Valve without confirming it doesn't work with a regular build of proton directly from them
 
@@ -21,6 +27,8 @@ Updated biweekly.
 # Other info
 Packages are compressed using LZMA.
 
-How can i ID the build: Check the commit number before AVX-512. (Or open the version file in the release you've downloaded)
+Q: How can i ID the build
+A: Check the commit number before AVX-512. (Or open the version file in the release you've downloaded)
 
-Can i get the source: The source is a direct copy of bleeding-egde-(Insert-commit)
+Q: Can i get the source
+A: The source is a direct copy of bleeding-egde-(Insert-commit)
