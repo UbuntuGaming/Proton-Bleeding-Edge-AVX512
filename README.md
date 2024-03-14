@@ -35,11 +35,16 @@ Question 2: Can i get the source?
 Answer 2: The source is a direct copy of bleeding-edge-(Insert-commit) With a few build changes to Proton & it's subprojects. In the future i may create repository that supports newly supported titles/features by upstream Wine, But this repository does not have any actual source changes, Excluding workarounds to fix issues.
 
 
-Question 4: Is my performance going to increase by a dramatic amount?
+Question 3: Is my performance going to increase by a dramatic amount?
 
-Answer 4: Performance gains are negligible in my testing (Tried both -O2 & -O3) even with AVX+PGO+LTO on some subprojects. But i paid for the whole CPU, I'm going to use the whole CPU! This repo serves to save people time bothering to compile it themselves.
+Answer 3: Performance gains are negligible in my testing (Tried both -O2 & -O3) even with AVX+PGO+LTO on some subprojects. But i paid for the whole CPU, I'm going to use the whole CPU! This repo serves to save people time bothering to compile it themselves.
 
 
-Question 5: What is the 'Proton-NoSteam' Folder?
+Question 3: What is the 'Proton-NoSteam' Folder?
 
-Answer 5: This allows you to use Proton outside of Steam for non-steam Windows applications, Read the 'EditMe!' script to learn how to use it.
+Answer 3: This allows you to use Proton outside of Steam for non-steam Windows applications, Read the 'EditMe!' script to learn how to use it.
+
+
+Question 4: Full PGO on Wine?
+
+Answer 4: Not currently, But i'm working on it..
