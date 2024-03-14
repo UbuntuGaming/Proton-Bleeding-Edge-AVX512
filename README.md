@@ -15,11 +15,9 @@ The Finals.
 
 Any title that requires kernel boot parameter: clearcpuid=304
 
-# Titles that work but have issues:
-Call Of Duty: Black Ops 3 > Main menu does not crash Wine if you leave it a few seconds before doing anything once the game loads the menu.
-
 # Important Notice:
-For now packages are only built with -O3. Some titles may not work or work with issues e.g Call Of Duty: Black Ops 3 is known to crash Wine on main menu if moving around the menu instantly after it loads with the zoomies.
+For now packages are only built with -O3. 
+Some titles may not work. (But if i find them i can solve the issue, If it's simple enough)
 
 # How often will you release packages:
 Updated biweekly.
@@ -34,17 +32,12 @@ Answer 1: Check the commit number before AVX-512. (Or open the version file in t
 
 Question 2: Can i get the source?
 
-Answer 2: The source is a direct copy of bleeding-edge-(Insert-commit) With a few build changes to Proton & it's subprojects.
-
-
-Question 3: Does this include all instructions ranging from x86-64-v1 to x86-64-v4?
-
-Answer 3: This is a stripped down version. The same as if you was building with core-avx2 (According to GCC source code), But with AVX-512 support (If -mtune=core-avx512 was a feature this would be it)
+Answer 2: The source is a direct copy of bleeding-edge-(Insert-commit) With a few build changes to Proton & it's subprojects. In the future i may create repository that supports newly supported titles/features by upstream Wine, But this repository does not have any actual source changes, Excluding workarounds to fix issues.
 
 
 Question 4: Is my performance going to increase by a dramatic amount?
 
-Answer 4: Performance gains are negligible in my testing (Tried both -O2 & -O3) even with AVX+PGO+LTO on some subprojects. But i paid for the whole CPU, I'm going to use the whole CPU! This repo serves to save people time bothering to compile it themselves (Since this is something i was already doing anyway).
+Answer 4: Performance gains are negligible in my testing (Tried both -O2 & -O3) even with AVX+PGO+LTO on some subprojects. But i paid for the whole CPU, I'm going to use the whole CPU! This repo serves to save people time bothering to compile it themselves.
 
 
 Question 5: What is the 'Proton-NoSteam' Folder?
