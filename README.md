@@ -3,7 +3,7 @@ Proton Builds Built With AVX-512 &amp; Partial PGO+LTO.
 
 
 # CPU Instruction Requirements:
-AVX512
+AVX512🌶️
 
 you can figure out if you meet the requirements by opening a terminal:
 grep avx512 /proc/cpuinfo
