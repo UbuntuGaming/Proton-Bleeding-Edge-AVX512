@@ -19,7 +19,7 @@ Extract the release into ~/.steam/root/compatibilitytools.d/
 Please do not submit issues to Valve without confirming it doesn't work with a regular/official build of Proton directly from them.
 
 # Titles that do not work:
-The Finals.
+The Finals. (Due to clearcpuid=304 / Disables AVX-512)
 
 Battlebit Remastered (Something in the 32Bit DXVK libs is causing issues with the EAC launcher, But the EAC launcher works fine on all other titles. Workaround soonish)
 
