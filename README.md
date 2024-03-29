@@ -12,6 +12,7 @@ Please do not submit issues to Valve without confirming it doesn't work with a r
 
 # Titles that do not work:
 The Finals.
+Battlebit Remastered (Something in the 32Bit DXVK libs is causing issues with the EAC launcher, But the EAC launcher works fine on all other titles. Workaround soon)
 
 Any title that requires kernel boot parameter: clearcpuid=304
 
