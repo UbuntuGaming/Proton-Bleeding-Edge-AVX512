@@ -7,7 +7,7 @@ AVX512🌶️
 
 F16C
 
-FMA4
+FMA3
 
 # Install:
 
