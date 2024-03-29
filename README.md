@@ -59,6 +59,6 @@ Question 4: What is the 'Proton-NoSteam' Folder?
 Answer 4: This allows you to use Proton outside of Steam for non-steam Windows applications, Read the 'EditMe!' script to learn how to use it.
 
 
-Question 4: Full PGO + LTO on Wine?
+Question 5: Full PGO + LTO on Wine?
 
-Answer 4: You won't get LTO. But as for PGO i'm working on it.. (When i do get it working only expect one build per month..)
+Answer 5: You won't get LTO. But as for PGO i'm working on it.. (When i do get it working only expect one build per month..)
