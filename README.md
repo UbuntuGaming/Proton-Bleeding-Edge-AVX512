@@ -24,7 +24,6 @@ Some titles may not work. (But if i find them i can solve the issue, If it's sim
 Updated biweekly.
 
 # Other info
-Packages are compressed using LZMA.
 
 Question 1: How can i ID the build?
 
