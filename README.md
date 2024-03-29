@@ -54,9 +54,9 @@ Expect slightly higher power consumtion, If you haven't already now would be a g
 This repository serves to save people time bothering to compile Proton themselves with most™️ the issues pre-solved, or currently being figured out.
 
 
-Question 3: What is the 'Proton-NoSteam' Folder?
+Question 4: What is the 'Proton-NoSteam' Folder?
 
-Answer 3: This allows you to use Proton outside of Steam for non-steam Windows applications, Read the 'EditMe!' script to learn how to use it.
+Answer 4: This allows you to use Proton outside of Steam for non-steam Windows applications, Read the 'EditMe!' script to learn how to use it.
 
 
 Question 4: Full PGO + LTO on Wine?
