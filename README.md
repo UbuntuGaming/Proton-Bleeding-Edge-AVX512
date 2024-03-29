@@ -3,7 +3,7 @@ Proton Builds Built With AVX-512 &amp; Partial PGO+LTO.
 
 
 # CPU Instruction Requirements:
-AVX512 F16C FMA3.
+AVX2 AVX512 F16C FMA3.
 
 # Install:
 
