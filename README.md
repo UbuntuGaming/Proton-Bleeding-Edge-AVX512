@@ -29,6 +29,7 @@ Any program that requires kernel boot parameter: clearcpuid=304
 
 # Important Notice:
 For now packages are only built with -O3.
+
 Some titles may not work. (But if i find them i can solve the issue, If it's simple enough)
 
 # How often will you release packages:
