@@ -49,7 +49,7 @@ Question 3: Is my performance going to increase by a dramatic amount?
 
 Answer 3: Performance gains are negligible in my testing (Tried both -O2 & -O3) even with AVX+PGO+LTO on some subprojects. But i paid for the whole CPU, I'm going to use the whole CPU!. 
 
-Expect slightly higher power consumtion, If you haven't already now would be a good time to go into the bios & manually setup fan control to be controlled by CPU temp. 
+Expect slightly higher power consumption, If you haven't already now would be a good time to go into the bios & manually setup fan control to be controlled by CPU temp. 
 
 This repository serves to save people time bothering to compile Proton themselves with most™️ the issues pre-solved, or currently being figured out.
 
