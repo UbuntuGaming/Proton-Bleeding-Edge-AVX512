@@ -23,7 +23,7 @@ The Finals. (Due to clearcpuid=304 / Disables AVX-512)
 
 Battlebit Remastered (Something in the 32Bit DXVK libs is causing issues with the EAC launcher, But the EAC launcher works fine on all other titles. Workaround soonish)
 
-Any title that requires kernel boot parameter: clearcpuid=304
+Any program that requires kernel boot parameter: clearcpuid=304
 
 # Important Notice:
 For now packages are only built with -O3.
