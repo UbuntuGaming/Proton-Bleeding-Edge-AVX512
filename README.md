@@ -9,7 +9,7 @@ You can figure out if you meet the requirements by opening a terminal:   grep av
 
 If you see avx512 in red you're good to go.
 
-Other CPU features are required but are universally there across both Intel & AMD avx-512 CPUs.
+Other CPU features are required but are universally there across both Intel & AMD AVX-512 CPUs.
 
 # Install:
 
