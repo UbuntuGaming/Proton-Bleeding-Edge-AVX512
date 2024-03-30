@@ -67,6 +67,15 @@ Updated biweekly.
 >
 >Answer 5: You won't get LTO. But as for PGO i'm working on it.. (When i do get it working only expect one build per month..)
 
+>Question 6: Why is the formatting of this page so terrible?
+>
+>Answer 6: I'm learning.
 
+# Universal Variables
 
+>Question 1: I have this really old application (or an application that doesn't like hyperthreading) & it favours single core performance is there anything i can do to get more fps?
+>
+>Answer 1: Yes, Well kind of, depends. If you're using a CPU with hyperthreading you can try disabling hyperthreading in software for the single application
+Example i have a 6 CPU that has 12 total threads. So i can set `WINE_CPU_TOPOLOGY=6:0,2,4,6,8,10 && taskset -c 0,2,4,6,8,10 %command%` (Always make sure taskset is the very last command in the chain regardless whatever other values you're setting) Please see Explained 1 for more information.
 
+>Explained 1: This tells the Wine/Windows application WINE_CPU_TOPOLOGY=6 Display to the program i only have 6 cores without hyperthreading. and 0,2,4,6,8,10 are the core numbers so the total command with the demlimiter is WINE_CPU_TOPOLOGY=6:0,2,4,6,8,10. As for taskset -c 0,2,4,6,8,10 this is the same deal with cores but this time we're locking the application onto these cores so it can't use any others. this scales up and down for example i have 8 cores the command would be 8:0,2,4,6,8,10,12,14 / 0,2,4,6,8,10,12,14.
