@@ -24,7 +24,7 @@ Please don't submit issues to Valve using logs from these builds. If you have is
 # Titles that don't work:
 The Finals. (Starting from release _14d7b51_AVX512_ It should now run perfectly)
 
-Battlebit Remastered (Something in the 32Bit DXVK libs is causing issues with the EAC launcher, But the EAC launcher works fine on all other titles. Workaround soonish)
+Battlebit Remastered (Starting from _14d7b51_AVX512.Rev2_ It now launches perfectly everytime.)
 
 Any program that requires kernel boot parameter: clearcpuid=304
 
