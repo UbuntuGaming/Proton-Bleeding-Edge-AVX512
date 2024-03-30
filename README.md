@@ -18,9 +18,10 @@ Create a ~/.steam/root/compatibilitytools.d directory if it does not exist.
 Extract the release into ~/.steam/root/compatibilitytools.d/
 
 # Issues:
-Please do not submit issues to Valve without confirming it doesn't work with a regular/official build of Proton directly from them.
+Please don't submit issues to Valve using logs from these builds. If you have issues with both Proton_AVX512 and Proton official builds. Please submit them logs from the official builds.
 
-# Titles that do not work:
+
+# Titles that don't work:
 The Finals. (Starting from release _14d7b51_AVX512_ It should now run perfectly)
 
 Battlebit Remastered (Something in the 32Bit DXVK libs is causing issues with the EAC launcher, But the EAC launcher works fine on all other titles. Workaround soonish)
