@@ -21,7 +21,7 @@ Extract the release into ~/.steam/root/compatibilitytools.d/
 Please do not submit issues to Valve without confirming it doesn't work with a regular/official build of Proton directly from them.
 
 # Titles that do not work:
-The Finals. (Due to clearcpuid=304 / Disables AVX-512)
+The Finals. (Starting from release _14d7b51_AVX512_ It should now run perfectly)
 
 Battlebit Remastered (Something in the 32Bit DXVK libs is causing issues with the EAC launcher, But the EAC launcher works fine on all other titles. Workaround soonish)
 
@@ -54,7 +54,7 @@ Answer 3: Performance gains are negligible in my testing (Tried both -O2 & -O3) 
 
 Expect slightly higher power consumption, If you haven't already now would be a good time to go into the bios & manually setup fan control to be controlled by CPU temp. 
 
-This repository serves to save people time bothering to compile Proton themselves with most™️ the issues pre-solved, or currently being figured out.
+This repository serves to save people time bothering to compile Proton with AVX512 support themselves, with most™️ the issues pre-solved, or currently being figured out.
 
 
 Question 4: What is the 'Proton-NoSteam' Folder?
