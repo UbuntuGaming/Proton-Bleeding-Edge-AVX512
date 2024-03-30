@@ -18,7 +18,7 @@ Create a ~/.steam/root/compatibilitytools.d directory if it does not exist.
 Extract the release into ~/.steam/root/compatibilitytools.d/
 
 # Issues:
-Please don't submit issues to Valve using logs from these builds. If you have issues with both Proton_AVX512 and Proton official builds. Please submit them logs from the official builds.
+Please don't submit issues to Valve using logs from these builds. If you have issues with both Proton_AVX512 and Proton official builds. Please submit them logs from the official builds. Unless both are failing at the same point.
 
 
 # Titles that don't work:
