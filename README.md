@@ -38,8 +38,6 @@ Updated biweekly.
 
 # TO DO
 
-- [ ] Find more issues.
-
 - [ ] Rework Steam game saves to into "$HOME/Documents" drive under "ProtonDocuments/APPID" rather than the prefix. (This will create a shared space for game saves that don't support cloud sync.)
 
 # Other info
