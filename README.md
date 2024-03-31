@@ -36,7 +36,7 @@ Some titles may not work. (But if i find them i can solve the issue, If it's sim
 # How often will you release packages:
 Updated biweekly.
 
-# TO DO
+# To do list
 
 - [ ] Rework Steam game saves to into "$HOME/Documents" drive under "ProtonDocuments/APPID" rather than the prefix. (This will create a shared space for game saves that don't support cloud sync.)
 
