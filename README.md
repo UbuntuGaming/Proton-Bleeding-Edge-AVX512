@@ -36,11 +36,11 @@ Some titles may not work. (But if i find them i can solve the issue, If it's sim
 # How often will you release packages:
 Updated biweekly.
 
-# To do list
+# To do list:
 
 - [ ] Rework Steam game saves to into "$HOME/Documents" under "ProtonDocuments/APPID" rather than the prefix. (This will create a shared space for game saves that don't support cloud sync.)
 
-# Other info
+# Other info:
 
 >Question 1: How can i ID the build?
 >
@@ -75,7 +75,7 @@ Updated biweekly.
 >
 >Answer 6: I'm learning.
 
-# Universal Variables
+# Universal Variables:
 
 >Question 1: I have this really old application (or an application that doesn't like hyperthreading) & it favours single core performance is there anything i can do to get more fps?
 >
