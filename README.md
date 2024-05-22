@@ -66,7 +66,7 @@ Updated biweekly.
 >
 >Answer 4: This allows you to use Proton outside of Steam for non-steam Windows applications, Read the 'EditMe!' script to learn how to use it.
 
->Question 5: Proton-No-Steam How do i get the icon for my application to add to a .Desktop file
+>Question 5: Proton-No-Steam How do i get the icon for my application to add to a .Desktop file?
 >
 >Answer 5: Currently it's just a script, I will soon start packaging Proton with a open-source tool for pulling the icon.
 
