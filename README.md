@@ -65,15 +65,18 @@ Updated biweekly.
 >Question 4: What is the 'Proton-NoSteam' Folder?
 >
 >Answer 4: This allows you to use Proton outside of Steam for non-steam Windows applications, Read the 'EditMe!' script to learn how to use it.
->
->
->Question 5: Full PGO + LTO on Wine?
->
->Answer 5: You won't get LTO. But as for PGO i'm working on it.. (When i do get it working only expect one build per month..)
 
->Question 6: Why is the formatting of this page so terrible?
+>Question 5: Proton-No-Steam How do i get the icon for my application to add to a .Desktop file
 >
->Answer 6: I'm learning.
+>Answer 5: Currently it's just a script, I will soon start packaging Proton with a open-source tool for pulling the icon.
+
+>Question 6: Full PGO + LTO on Wine?
+>
+>Answer 6: You won't get LTO. But as for PGO i'm working on it.. (When i do get it working only expect one build per month..)
+
+>Question 7: Why is the formatting of this page so terrible?
+>
+>Answer 7: I'm learning.
 
 # Universal Variables:
 
@@ -82,3 +85,25 @@ Updated biweekly.
 >Answer 1: Yes, Well kind of, depends. If you're using a CPU with hyperthreading you can try disabling hyperthreading in software for the single application
 >
 >Example i have a 6 CPU that has 12 total threads. If i check `cat /sys/devices/system/cpu/cpu*/topology/thread_siblings_list | sort | uni` I can see the first value (on the left side) i see is 0, now if i follow this list down i get 0,1,2,3,4,5 (this is 6 cores) So in steam if i set `WINE_CPU_TOPOLOGY=6:0,1,2,3,4,5 %command%` I have told the application i only have 6 cores & have sucessfully locked the process onto the specified cores.
+> I've done the testing for this and this lead to a 5% performance improvement in Metro 2033 running under Proton and around 1% performance difference in windows gpu benchmarks running under Proton.
+
+# More performance outside of Proton:
+>Theoretical Question: I want more performance.
+>
+>
+>Kernel:
+>You can get much more out of the kernel in very old applications
+> `grep 'CONFIG_HZ=' /boot/config-$(uname -r)`
+>if you're not running a 1000hz kernel you can rebuild the kernel using you're current one as a template the source can be found on www.kernel.org. Some people will say 1000hz is snake oil this is false. I've done the testing and in every test i got better performance and lower power consumption. So for gaming 1000hz is recommended, especially if using studio grade audio setups, upsampling ect the reduction in cpu usage is nearly 30%!. If you're sitting on the desktop completely idle, yes less would probably be better.
+>
+>
+> Scheduler:
+> If your kernel supports it you can test out scx_lavd, If the kernel does not support it download the source from www.kernel.org use the old kernel config as a template. Guides can be found online.
+
+> AMD Mesa Drivers (Building):
+>Profiling mesa's common functions and optimising for your CPU may not lead to a massive performance increase, but the latency reduction & CPU usage is clear. If you're on Debian 13/Trixie/Testing i may be releasing my own repository for packages soon™️.
+>
+> AMD Mesa Drivers (Git):
+> Is newer better?
+>
+> No, for example in the latest master (on RX 7800XT). Some titles will experience effects alignment issues, in the case of StarWars Battlefront II textures will look like square pieces of cake. find a stable version and work your way forward, You can always backport patches this is what i'm doing. As i don't want to bisect the amount of commits mesa goes through in a month.
