@@ -97,8 +97,7 @@ Updated biweekly.
 >You can get much more out of the kernel in very old applications
 > `grep 'CONFIG_HZ=' /boot/config-$(uname -r)`
 >if you're not running a 1000hz kernel you can rebuild the kernel using your current one as a template the source can be found on www.kernel.org. Some people will say 1000hz is snake oil this is false. I've done the testing and in every test i got better performance and lower power consumption. So for gaming 1000hz is recommended, especially if using studio grade audio setups, upsampling ect the reduction in cpu usage is nearly 30%!. If you're sitting on the desktop completely idle, yes less would probably be better.
->
->
+
 > Scheduler:
 > If your kernel supports it you can test out **_scx_lavd_**, If the kernel does not support it download the source from www.kernel.org use the old kernel config as a template. Guides can be found online.
 
