@@ -104,6 +104,6 @@ Updated biweekly.
 >Profiling mesa's common functions and optimising for your CPU may not lead to a massive performance increase, but the latency reduction & CPU usage is clear. If you're on Debian 13/Trixie/Testing i may be releasing my own repository for packages soon™️.
 >
 > AMD Mesa Drivers (Git):
-> Is newer better?
+> Is newer always better?
 >
 > No, for example in the latest master (on RX 7800XT). Some titles will experience effects alignment issues, in the case of StarWars Battlefront II textures will look like square pieces of cake. find a stable version and work your way forward, You can always backport patches this is what i'm doing. As i don't want to bisect the amount of commits mesa goes through in a month.
