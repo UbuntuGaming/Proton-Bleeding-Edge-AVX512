@@ -88,7 +88,7 @@ Updated biweekly.
 > I've done the testing for this and this leads to a 5% performance improvement in Metro 2033 running under Proton and around 1% performance difference in windows gpu benchmarks running under Proton.
 
 # More performance outside of Proton:
-> Note: This section might be broken off into it's own repository, With much more information. (Or deleted)
+> **Important Note**: This section might be broken off into it's own repository, With much more information. (Or deleted)
 
 >Theoretical Question: I want more performance.
 >
