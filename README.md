@@ -100,7 +100,7 @@ Updated biweekly.
 >
 >
 > Scheduler:
-> If your kernel supports it you can test out scx_lavd, If the kernel does not support it download the source from www.kernel.org use the old kernel config as a template. Guides can be found online.
+> If your kernel supports it you can test out **_scx_lavd_**, If the kernel does not support it download the source from www.kernel.org use the old kernel config as a template. Guides can be found online.
 
 > AMD Mesa Drivers (Building):
 >Profiling mesa's common functions and optimising for your CPU may not lead to a massive performance increase, but the latency reduction & CPU usage is clear. If you're on Debian 13/Trixie/Testing i may be releasing my own repository for packages soon™️.
