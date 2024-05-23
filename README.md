@@ -34,18 +34,21 @@ For now packages are only built with -O3.
 Some titles may not work. (But if i find them i can solve the issue, If it's simple enough)
 
 # How often will you release packages:
-Updated biweekly.
+When i feel like it, But i try to make at least one a month.
+
+If Proton only has a few commits, a build will be skipped.
 
 # To do list:
 
-- [ ] Rework Steam game saves to into "$HOME/Documents" under "ProtonDocuments/APPID" rather than the prefix. (This will create a shared space for game saves that don't support cloud sync.)
+- [ ] More performance
 
 # Other info:
 
 >Question 1: How can i ID the build?
 >
 >Answer 1: Check the commit number before AVX-512 (Or open the version file in the release you've downloaded).
->I'm using the commit numbers to name each build as i'm terrible at naming stuff & since the sources are nearly identical it makes sense.
+>~~I'm using the commit numbers to name each build as i'm terrible at naming stuff & since the sources are nearly identical it makes sense.~~
+> Moving to actual versions soon. example ***BleedingEdge9-AVX512-123-rev2*** "9" as in the wine version, "-number" as in the build number. "-rev" as in the build revision. Previous method is terrible.
 
 
 >Question 2: Can i get the source?
@@ -99,7 +102,7 @@ Updated biweekly.
 >if you're not running a 1000hz kernel you can rebuild the kernel using your current one as a template the source can be found on www.kernel.org. Some people will say 1000hz is snake oil this is false. I've done the testing and in every test i got better performance and lower power consumption. So for gaming 1000hz is recommended, especially if using studio grade audio setups, upsampling ect the reduction in cpu usage is nearly 30%!. If you're sitting on the desktop completely idle, yes less would probably be better.
 
 > Scheduler:
-> If your kernel supports it you can test out **_scx_lavd_**, If the kernel does not support it download the source from www.kernel.org use the old kernel config as a template. Guides can be found online.
+> If your kernel supports BPF you can test out **_scx_lavd_**, If the kernel does not support it download the source from www.kernel.org use the old kernel config as a template. Guides and patches can be found online. Or ask your distros kernel package maintainer.
 
 > AMD Mesa Drivers (Building):
 >Profiling mesa's common functions and optimising for your CPU may not lead to a massive performance increase, but the latency reduction & CPU usage is clear. If you're on Debian 13/Trixie/Testing i may be releasing my own repository for packages soon™️.
@@ -107,4 +110,4 @@ Updated biweekly.
 > AMD Mesa Drivers (Git):
 > Is newer always better?
 >
-> No, for example in the latest master (on RX 7800XT). Some titles will experience effects alignment issues, in the case of StarWars Battlefront II textures will look like square pieces of cake. find a stable version and work your way forward, You can always backport patches this is what i'm doing. As i don't want to bisect the amount of commits mesa goes through in a month.
+> No, for example in the latest master (on RX 7800XT). Some titles will experience effects alignment issues, in StarWars Battlefront II textures will look like square pieces of cake & finally in HellDivers2 (DX12) everything is broken the image is just colours that looks like a failing graphics card. find a stable version and work your way forward, You can always backport patches if you understand what you're doing.
