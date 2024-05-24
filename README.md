@@ -46,9 +46,9 @@ If Proton only has a few commits, a build will be skipped.
 
 >Question 1: How can i ID the build?
 >
->Answer 1: Check the commit number before AVX-512 (Or open the version file in the release you've downloaded).
+>Answer 1: ~~Check the commit number before AVX-512.~~ Open the version file in the release you've downloaded.
 >~~I'm using the commit numbers to name each build as i'm terrible at naming stuff & since the sources are nearly identical it makes sense.~~
-> Moving to actual versions soon. example ***BleedingEdge9-AVX512-123-rev2*** "9" as in the wine version, "-number" as in the build number. "-rev" as in the build revision. Previous method is terrible.
+> Moved to actual versions. example ***BleedingEdge9-AVX512 Build 123.4*** "9" as in the wine version, "123" as in the build version. ".4" as in the build revision. Previous method was terrible.
 
 
 >Question 2: Can i get the source?
