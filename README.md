@@ -92,7 +92,7 @@ If Proton only has a few commits, a build will be skipped.
 >(Your results may differ / Be more dramatic as i'm running a highly modified linux kernel & OS tuned for gaming.)
 
 # Universal Game Variables:
- DX12 in games that "don't support it"
+ DX12/VKD3D-Proton in games that "don't support it" (This was tested on RADV)
 
 Unity: -force-d3d12
 
