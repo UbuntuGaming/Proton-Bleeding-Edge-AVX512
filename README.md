@@ -91,6 +91,15 @@ If Proton only has a few commits, a build will be skipped.
 >
 >(Your results may differ / Be more dramatic as i'm running a highly modified linux kernel & OS tuned for gaming.)
 
+# Universal Game Variables:
+ DX12 in games that "don't support it"
+
+Unity: -force-d3d12
+
+Unreal Engine 4: -dx12
+
+(Note: Sadly this can't be done to turn games into native Vulkan as game developers would have to include the processed Vulkan shaders in the DirectX build.)
+
 # More performance outside of Proton:
 > **Important Note**: This section might be broken off into it's own repository, With much more information. (Or deleted)
 
