@@ -22,9 +22,6 @@ Please don't submit issues to Valve using logs from these builds. If you have is
 
 
 # Titles that don't work:
-The Finals. (Starting from release _14d7b51_AVX512_ It should now run perfectly)
-
-Battlebit Remastered (Starting from _14d7b51_AVX512.Rev2_ It now launches perfectly everytime.)
 
 Any program that requires kernel boot parameter: clearcpuid=304
 
@@ -40,7 +37,9 @@ If Proton only has a few commits, a build will be skipped.
 
 # To do list:
 
-- [ ] More performance
+- [X] More performance.
+
+- [ ] Even more performance.
 
 # Other info:
 
@@ -60,8 +59,6 @@ If Proton only has a few commits, a build will be skipped.
 >
 >Answer 3: Performance gains are negligible in my testing (Tried both -O2 & -O3) even with AVX+PGO+LTO on some subprojects. But i paid for the whole CPU, I'm going to use the whole CPU!. 
 >
->Expect slightly higher power consumption, If you haven't already now would be a good time to go into the bios & manually setup fan control to be controlled by CPU temp. 
->
 >This repository serves to save people time bothering to compile Proton with AVX512 support themselves, with most™️ the issues pre-solved, or currently being figured out.
 
 
@@ -75,7 +72,9 @@ If Proton only has a few commits, a build will be skipped.
 
 >Question 6: Full PGO + LTO on Wine?
 >
->Answer 6: You won't get LTO. But as for PGO i'm working on it.. (When i do get it working only expect one build per month..)
+>Answer 6: ~~You won't get LTO. But as for PGO i'm working on it.. (When i do get it working only expect one build per month..)~~
+>
+> I don't have the tools to PGO all of Wine, I would need alot of storage & a huge collection of games. I might revisit this in the future, As i expand my collection.
 
 >Question 7: Why is the formatting of this page so terrible?
 >
@@ -87,8 +86,10 @@ If Proton only has a few commits, a build will be skipped.
 >
 >Answer 1: Yes, Well kind of, depends. If you're using a CPU with hyperthreading you can try disabling hyperthreading in software for the single application
 >
->Example i have a 6 CPU that has 12 total threads. If i check `cat /sys/devices/system/cpu/cpu*/topology/thread_siblings_list | sort | uni` I can see the first value (on the left side) i see is 0, now if i follow this list down i get 0,1,2,3,4,5 (this is 6 cores) So in steam if i set `WINE_CPU_TOPOLOGY=6:0,1,2,3,4,5 %command%` I have told the application i only have 6 cores & have sucessfully locked the process onto the specified cores.
+>Example i have a 6 core CPU that has 12 total threads. If i check `cat /sys/devices/system/cpu/cpu*/topology/thread_siblings_list | sort | uni` I can see the first value (on the left side) i see is 0, now if i follow this list down i get 0,1,2,3,4,5 (this is 6 cores) So in steam if i set `WINE_CPU_TOPOLOGY=6:0,1,2,3,4,5 %command%` I have told the application i only have 6 cores & have sucessfully locked the process onto the specified cores.
 > I've done the testing for this and this leads to a 5% performance improvement in Metro 2033 running under Proton and around 1% performance difference in windows gpu benchmarks running under Proton.
+>
+>(Your results may differ / Be more dramatic as i'm running a highly modified linux kernel & OS tuned for gaming.)
 
 # More performance outside of Proton:
 > **Important Note**: This section might be broken off into it's own repository, With much more information. (Or deleted)
@@ -102,7 +103,9 @@ If Proton only has a few commits, a build will be skipped.
 >if you're not running a 1000hz kernel you can rebuild the kernel using your current one as a template the source can be found on www.kernel.org. Some people will say 1000hz is snake oil this is false. I've done the testing and in every test i got better performance and lower power consumption. So for gaming 1000hz is recommended, especially if using studio grade audio setups, upsampling ect the reduction in cpu usage is nearly 30%!. If you're sitting on the desktop completely idle, yes less would probably be better.
 
 > Scheduler:
-> If your kernel supports BPF you can test out **_scx_lavd_**, If the kernel does not support it download the source from www.kernel.org use the old kernel config as a template. Guides and patches can be found online. Or ask your distros kernel package maintainer.
+> If your kernel supports BPF you can test out **_scx_lavd_**, If the kernel does not support it download the source from www.kernel.org use the old kernel config as a template. Guides and patches can be found online. Or ask your distros kernel package maintainer. 
+>
+> (Performance results -3% to +7%. Basically you'll have to do the testing yourself for each title. Note: My results only include 0.1% lows, 1% lows & average fps. As this is all that matters, fps highs are not included.)
 
 > AMD Mesa Drivers (Building):
 >Profiling mesa's common functions and optimising for your CPU may not lead to a massive performance increase, but the latency reduction & CPU usage is clear. If you're on Debian 13/Trixie/Testing i may be releasing my own repository for packages soon™️.
