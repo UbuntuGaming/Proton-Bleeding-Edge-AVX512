@@ -123,7 +123,7 @@ Unreal Engine 4: -dx12
 > (Performance results -3% to +7%. Basically you'll have to do the testing yourself for each title. Note: My results only include 0.1% lows, 1% lows & average fps. As this is all that matters, fps highs are not included.)
 
 >Mouse & Keyboard:
-> You can change mouse & keyboard response times with kernel variables. this can be done with startup parameters *GRUB* `/etc/default/grub` then update grub as normal, guides can be found online. I have no idea for <a href="https://wiki.archlinux.org/title/Kernel_parameters"> systemd-boot</a> when i find a OS with systemd-boot i disable it and install grub.
+> You can change mouse & keyboard response times with kernel variables. this can be done with startup parameters *GRUB* `/etc/default/grub` then update grub as normal, guides can be found online. I don't use systemd-boot but i found <a href="https://wiki.archlinux.org/title/Kernel_parameters"> this</a> on Arch wiki.
 >
 > the variables are as follows `mousepoll=1 kbpoll=1 jspoll=1`
 
