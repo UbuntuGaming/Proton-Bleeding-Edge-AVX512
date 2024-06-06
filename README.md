@@ -89,7 +89,10 @@ If Proton only has a few commits, a build will be skipped.
 >Example i have a 6 core CPU that has 12 total threads. If i check `cat /sys/devices/system/cpu/cpu*/topology/thread_siblings_list | sort | uni` I can see the first value (on the left side) i see is 0, now if i follow this list down i get 0,1,2,3,4,5 (this is 6 cores) So in steam if i set `WINE_CPU_TOPOLOGY=6:0,1,2,3,4,5 %command%` I have told the application i only have 6 cores & have sucessfully locked the process onto the specified cores.
 > I've done the testing for this and this leads to a 5% performance improvement in Metro 2033 running under Proton and around 1% performance difference in windows gpu benchmarks running under Proton.
 >
->(Your results may differ / Be more dramatic as i'm running a highly modified linux kernel & OS tuned for gaming.)
+>Important note on **WINE_CPU_TOPOLOGY:** I've found an issue where WINE_CPU_TOPOLOGY will only set the mask for some threads, But does change total number of cpus. Getting around the issue can be done in steam via taskset `WINE_CPU_TOPOLOGY=6:0,1,2,3,4,5 taskset -c 0,1,2,3,4,5 %command%` note when using taskset it's the same as using WINE_CPU_TOPOLOGY ignore the total number of cores and the delimiter. 
+>
+>
+>(Your performance results may differ / Be more dramatic as i'm running a highly modified linux kernel & OS tuned for gaming.)
 
 # Universal Game Variables:
  DX12/VKD3D-Proton in games that "don't support it" (This was tested on RADV)
