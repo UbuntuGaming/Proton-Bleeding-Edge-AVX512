@@ -50,7 +50,7 @@ If Proton only has a few commits, a build will be skipped.
 
 >Question 2: Explain Build Versions?
 >
->Answer 2:***BleedingEdge9-AVX512 Build 123.4*** "9" as in the wine version, "123" as in the build version. ".4" as in the build revision.
+>Answer 2: ***BleedingEdge9-AVX512 Build 123.4*** "9" as in the wine version, "123" as in the build version. ".4" as in the build revision.
 
 >Question 3: Release vs Pre-release?
 >
@@ -84,7 +84,7 @@ If Proton only has a few commits, a build will be skipped.
 
 >Question 9: Proton-No-Steam does music production software work with MIDI devices?
 >
->Answer 9: Yes, If the software runs & doesn't require web-browser callbacks to activate. Most MIDI devices will work as if it was native windows. Some software may require tuning to get it to work flawlessly.
+>Answer 9: Yes, If the software runs & doesn't require web-browser callbacks to activate. Most MIDI devices will work as if it was native windows. System & software may require additional tuning to get it working flawlessly.
 
 # Universal Variables:
 
@@ -128,4 +128,4 @@ Unreal Engine 4: -dx12
 > the variables are as follows `mousepoll=1 kbpoll=1 jspoll=1`
 
 > AMD Mesa Drivers (Building):
->Profiling <a href="https://gitlab.freedesktop.org/mesa/mesa"> Mesa</a> optimising for your CPU may not lead to a massive performance increase. But the latency reduction & CPU usage is clear.
+>Profiling <a href="https://gitlab.freedesktop.org/mesa/mesa"> Mesa</a> & optimising for your CPU may not lead to a massive performance increase. But the latency reduction & CPU usage is clear.
