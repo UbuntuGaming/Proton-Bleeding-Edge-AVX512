@@ -54,7 +54,7 @@ If Proton only has a few commits, a build will be skipped.
 
 >Question 3: Release vs Pre-release?
 >
->Answer 3: From time to time you might get a pre-release build. Days after the stable release. this won't be as refined as the main release, and might contain stuff that will be removed or updated in the actual release.
+>Answer 3: From time to time you might get a pre-release build. Days after the stable release. this won't be as refined as the main release & might contain stuff that will be removed or updated in the actual release.
 
 >Question 4: Can i get the source?
 >
@@ -93,7 +93,7 @@ If Proton only has a few commits, a build will be skipped.
 >Answer 1: Yes, Well kind of, depends. If you're using a CPU with hyperthreading you can try disabling hyperthreading in software for the single application
 >
 >Example i have a 6 core CPU that has 12 total threads. If i check `cat /sys/devices/system/cpu/cpu*/topology/thread_siblings_list | sort | uni` I can see the first value (on the left side) i see is 0, now if i follow this list down i get 0,1,2,3,4,5 (this is 6 cores) So in steam if i set `WINE_CPU_TOPOLOGY=6:0,1,2,3,4,5 %command%` I have told the application i only have 6 cores & have sucessfully locked the process onto the specified cores.
-> I've done the testing for this and this leads to a 5% performance improvement in Metro 2033 running under Proton and around 1% performance difference in windows gpu benchmarks running under Proton.
+> I've done the testing for this & this leads to a 5% performance improvement in Metro 2033 running under Proton & around 1% performance difference in windows gpu benchmarks running under Proton.
 >
 >Important note on **WINE_CPU_TOPOLOGY:** I've found an issue where WINE_CPU_TOPOLOGY will only set the mask for some threads, But does change total number of cpus. Getting around the issue can be done in steam via taskset `WINE_CPU_TOPOLOGY=6:0,1,2,3,4,5 taskset -c 0,1,2,3,4,5 %command%` note when using taskset it's the same as using WINE_CPU_TOPOLOGY ignore the total number of cores and the delimiter. 
 
@@ -123,7 +123,7 @@ Unreal Engine 4: -dx12
 > (Performance results -3% to +7%. Basically you'll have to do the testing yourself for each title. Note: My results only include 0.1% lows, 1% lows & average fps. As this is all that matters, fps highs are not included.)
 
 >Mouse & Keyboard:
-> You can change mouse and keyboard response times with kernel variables. this can be done with startup parameters *GRUB* `/etc/default/grub` then update grub as normal, guides can be found online. I have no idea for <a href="https://wiki.archlinux.org/title/Kernel_parameters"> systemd-boot</a> when i find a OS with systemd-boot i disable it and install grub.
+> You can change mouse & keyboard response times with kernel variables. this can be done with startup parameters *GRUB* `/etc/default/grub` then update grub as normal, guides can be found online. I have no idea for <a href="https://wiki.archlinux.org/title/Kernel_parameters"> systemd-boot</a> when i find a OS with systemd-boot i disable it and install grub.
 >
 > the variables are as follows `mousepoll=1 kbpoll=1 jspoll=1`
 
