@@ -75,7 +75,7 @@ If Proton only has a few commits, a build will be skipped.
 
 >Question 6: Does BleedingEdge-AVX512 work with MIDI devices?
 >
->Answer 6: Yes, It's Wine. If the software runs. Most USB MIDI devices will work as if it was native windows, Other device types haven't been tested. System & software may require additional tuning to get everything working flawlessly. Software that requires online activation through a browser is being worked out, But is not a priority.
+>Answer 6: Yes, It's Wine. If the software runs. Most USB MIDI devices will work as if it was native windows, Other device types haven't been tested. System & software may require additional tuning to get everything working flawlessly. MIDI Devices containing software activation codes & software that requires online activation through a browser is being worked out, But is not a priority.
 
 # Universal Variables:
 
