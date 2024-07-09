@@ -2,8 +2,8 @@
 Proton Builds Built With AVX-512 &amp; Partial PGO+LTO.
 
 
-# CPU Instruction Requirements:
-AVX512🌶️
+# CPU Requirements:
+**AVX512**🌶️
 
 You can figure out if you meet the requirements by opening a terminal:   `grep avx512 /proc/cpuinfo`
 
@@ -19,7 +19,7 @@ Create a `~/.steam/root/compatibilitytools.d` directory if it does not exist.
 Extract the release into `~/.steam/root/compatibilitytools.d/`
 
 # Issues:
-Please don't submit issues to Valve using logs from these builds. If you have issues with both Proton_AVX512 and Proton official builds. Please submit them logs from the official builds. Unless both are failing at the same point.
+Please don't submit issues to Valve using logs from these builds. If you have issues with both Proton_AVX512 & Proton official builds. Please submit them logs from the official builds.
 
 
 # Titles that don't work:
@@ -27,7 +27,6 @@ Please don't submit issues to Valve using logs from these builds. If you have is
 Any program that requires kernel boot parameter: clearcpuid=304
 
 # Important Notice:
-For now packages are only built with -O3.
 
 Some titles may not work. (But if i find them i can solve the issue, If it's simple enough)
 
@@ -36,13 +35,23 @@ When i feel like it, But i try to make at least one a month.
 
 If Proton only has a few commits, a build will be skipped.
 
-# To do list:
+# Roadmap:
 
-- [X] More performance.
+**(Stable)**
 
-- [ ] Even more performance.
+- [ ] LTO.
 
-# Other info:
+- [ ] PGO.
+
+- [ ] More performance.
+
+**(Unstable)**
+
+- [X] LTO.
+
+- [ ] PGO.
+
+# Questions:
 
 >Question 1: How can i ID the build?
 >
@@ -54,37 +63,19 @@ If Proton only has a few commits, a build will be skipped.
 
 >Question 3: Release vs Pre-release?
 >
->Answer 3: From time to time you might get a pre-release build. Days after the stable release. this won't be as refined as the main release & might contain stuff that will be removed or updated in the actual release.
+>Answer 3: From time to time you might get a pre-release build. This won't be as refined as the main release & might contain stuff that will be removed or updated in the actual release.
 
->Question 4: Can i get the source?
+>Question 4: What is the 'Proton-NoSteam' Folder?
 >
->Answer 4: The source is a direct copy of bleeding-edge-(Insert-commit) With a few build changes to Proton & it's subprojects. But this repository does not have any actual source changes excluding workarounds to fix issues.
+>Answer 4: This allows you to use Proton outside of Steam for non-steam Windows applications, Read the 'EditMe!' script to learn how to use it.
 
+>Question 5: Full PGO + LTO on Wine?
+>
+>Answer 5: Working on it.
 
->Question 5: Is my performance going to increase by a dramatic amount?
+>Question 6: Does BleedingEdge-AVX512 work with MIDI devices?
 >
->Answer 5: Performance gains are negligible in my testing (Tried both -O2 & -O3) even with AVX+PGO+LTO on some subprojects. But i paid for the whole CPU, I'm going to use the whole CPU!. 
->
->This repository serves to save people time bothering to compile Proton with AVX512 support themselves, with most™️ the issues pre-solved, or currently being figured out.
-
-
->Question 6: What is the 'Proton-NoSteam' Folder?
->
->Answer 6: This allows you to use Proton outside of Steam for non-steam Windows applications, Read the 'EditMe!' script to learn how to use it.
-
->Question 7: Proton-No-Steam How do i get the icon for my application to add to a .Desktop file?
->
->Answer 7: Currently it's just a script, I will soon start packaging Proton with a open-source tool for pulling the icon.
-
->Question 8: Full PGO + LTO on Wine?
->
->Answer 8: ~~You won't get LTO. But as for PGO i'm working on it.. (When i do get it working only expect one build per month..)~~
->
-> I don't have the tools to PGO all of Wine, I would need alot of storage & a huge collection of games. I might revisit this in the future.
-
->Question 9: Proton-No-Steam does music production software work with MIDI devices?
->
->Answer 9: Yes, If the software runs & doesn't require web-browser callbacks to activate. Most MIDI devices will work as if it was native windows. System & software may require additional tuning to get it working flawlessly.
+>Answer 6: Yes, It's Wine. If the software runs. Most USB MIDI devices will work as if it was native windows, Other device types haven't been tested. System & software may require additional tuning to get everything working flawlessly. Software that requires online activation through a browser is being worked out, But is not a priority.
 
 # Universal Variables:
 
@@ -128,4 +119,4 @@ Unreal Engine 4: -dx12
 > the variables are as follows `mousepoll=1 kbpoll=1 jspoll=1`
 
 > AMD Mesa Drivers (Building):
->Profiling <a href="https://gitlab.freedesktop.org/mesa/mesa"> Mesa</a> & optimising for your CPU may not lead to a massive performance increase. But the latency reduction & CPU usage is clear.
+>Profiling <a href="https://gitlab.freedesktop.org/mesa/mesa"> Mesa</a> & optimising for your CPU may not lead to a massive GPU performance increase. But the latency reduction & CPU usage is clear.
