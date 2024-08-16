@@ -33,7 +33,7 @@ Please don't submit issues to Valve using logs from these builds. If you have is
 
 This project is not affiliated with Valve Corporation's Proton.
 
-This is a hobby project. (I come and go as i please)
+This is a hobby project. (I come & go as i please)
 
 This project does not accept any donations or payment. (If someone claims to be a representative of this project.. They are not...)
 
@@ -41,7 +41,7 @@ While the project has held onto same name as "Proton BleedingEdge" for now. This
 
 If a program requires kernel boot parameter: clearcpuid=304 Wine will not work at all.
 
-In credits you might see people outside of the Wine/Proton project. These are people who are either credited with the following: initial patches, whole patches or ideas.
+In credits you might see people outside of the Wine/Proton project. These are people who are credited with the following: initial patches, whole patches or ideas.
 
 This project is a binary release only, sources will be available when i get around to it. (But it might be unbuildable)
 
