@@ -7,11 +7,6 @@ Proton Builds Built With AVX-512 &amp; Partial PGO+LTO.
 
 **Linux Kernel: 6.0+** > Starting from Build 5
 
-
-# AVX512 Build Requirements:
-
-**All of** <a href="https://github.com/UbuntuGaming/Proton-Bleeding-Edge-AVX512/edit/main/README.md#requirements">**Requirements**</a>
-
 **AVX512**🌶️
 
 You can figure out if you have AVX512 by opening a terminal:   `grep avx512 /proc/cpuinfo`
