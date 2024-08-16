@@ -37,7 +37,7 @@ This is a hobby project. (I come and go as i please)
 
 This project does not accept any donations or payment. (If someone claims to be a representative of this project.. They are not...)
 
-While the project has held onto same name as "Proton BleedingEdge" for now. This is not at 100% replica of BleedingEdge starting from build 5, expect improved performance & features going forward until i come up with a new name for the project.
+While the project has held onto same name as "Proton BleedingEdge" for now. This is not at 100% replica of BleedingEdge starting from build 5.
 
 If a program requires kernel boot parameter: clearcpuid=304 Wine will not work at all.
 
