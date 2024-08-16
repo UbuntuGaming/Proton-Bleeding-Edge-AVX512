@@ -2,14 +2,27 @@
 Proton Builds Built With AVX-512 &amp; Partial PGO+LTO.
 
 
-# CPU Requirements:
+# Requirements:
+<a href="https://github.com/ValveSoftware/Proton/wiki/Requirements"> **Normal Proton Requirements**</a>
+
+**Linux Kernel: 6.0+** > Starting from Build 5
+
+
+# AVX512 Build Requirements:
+
+**All of** <a href="https://github.com/UbuntuGaming/Proton-Bleeding-Edge-AVX512/edit/main/README.md#requirements">**Requirements**</a>
+
 **AVX512**🌶️
 
-You can figure out if you meet the requirements by opening a terminal:   `grep avx512 /proc/cpuinfo`
+You can figure out if you have AVX512 by opening a terminal:   `grep avx512 /proc/cpuinfo`
 
 If you see avx512 highlighted you're good to go.
 
-Other CPU features are required but are universally there across both Intel & AMD AVX-512 CPUs.
+**Notices:**
+
+At some point i plan on making Intel 10th generation feature set the minimum target. Older target will be discontinued for AVX512.
+
+All AVX512 CPU's That cannot maintain max boost under heavy 256bit/512bit workloads are not officially supported. Unless manually overclocked back up to normal boost speeds, with turbo boost disabled.
 
 # Install:
 
@@ -21,19 +34,28 @@ Extract the release into `~/.steam/root/compatibilitytools.d/`
 # Issues:
 Please don't submit issues to Valve using logs from these builds. If you have issues with both Proton_AVX512 & Proton official builds. Please submit them logs from the official builds.
 
+# Important Notices:
 
-# Titles that don't work:
+This project is not affiliated with Valve Corporation's Proton.
 
-Any program that requires kernel boot parameter: clearcpuid=304
+This is a hobby project. (I come and go as i please)
 
-# Important Notice:
+This project does not accept any donations or payment. (If someone claims to be a representative of this project.. They are not...)
 
-Some titles may not work. (But if i find them i can solve the issue, If it's simple enough)
+While the project has held onto same name as "Proton BleedingEdge" for now. This is not at 100% replica of BleedingEdge starting from build 5, expect improved performance & features going forward until i come up with a new name for the project.
+
+If a program requires kernel boot parameter: clearcpuid=304 Wine will not work at all.
+
+In credits you might see people outside of the Wine/Proton project. These are people who are either credited with the following: initial patches, whole patches or ideas.
+
+This project is a binary release only, sources will be available when i get around to it. (But it might be unbuildable)
 
 # How often will you release packages:
 When i feel like it, But i try to make at least one a month.
 
 If Proton only has a few commits, a build will be skipped.
+
+If i have Functionality/Performance regressions builds will be stopped until **all** issues are resolved.
 
 # Roadmap:
 
@@ -75,7 +97,7 @@ If Proton only has a few commits, a build will be skipped.
 
 >Question 6: Does BleedingEdge-AVX512 work with MIDI devices?
 >
->Answer 6: Yes, It's Wine. If the software runs. Most USB MIDI devices will work as if it was native windows, Other device types haven't been tested. System & software may require additional tuning to get everything working flawlessly. MIDI Devices containing software activation codes & software that requires online activation through a browser is being worked out, But is not a priority.
+>Answer 6: Depending how the software communicates with the device, Yes. Most USB MIDI devices will work as if it was native windows, Other device types haven't been tested. System & software may require additional tuning to get everything working flawlessly. MIDI Devices containing software activation codes is being worked out, But is not a priority.
 
 # Universal Variables:
 
