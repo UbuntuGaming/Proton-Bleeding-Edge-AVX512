@@ -22,7 +22,7 @@ If you see avx512 highlighted you're good to go.
 
 At some point i plan on making Intel 10th generation feature set the minimum target. Older target will be discontinued for AVX512.
 
-All AVX512 CPU's That cannot maintain max boost under heavy 256bit/512bit workloads are not officially supported. Unless manually overclocked back up to normal boost speeds, with turbo boost disabled.
+All AVX512 CPU's That cannot maintain max boost under heavy 256/512bit workloads are not officially supported. Unless manually overclocked back up to normal boost speeds, with turbo boost disabled.
 
 # Install:
 
